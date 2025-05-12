@@ -1,0 +1,90 @@
+@font-face {
+font-family: "Prata";  
+src: url("/Fonts/Prata/Prata-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
+@font-face {
+font-family: "Arial";  
+src: url("/Fonts/Arial/ARIAL.TTF") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $dark;
+  color: $white;
+  font-size: 16px;
+  font-family: "Arial"; 
+}
+a {
+  color: $white;
+  transition: color 0.2s ease-in;
+  &:hover {
+    color: $placeholder;
+  }
+}
+h1{
+  font-size: 80px;
+  line-height: 120%;
+  font-family: "Prata";
+   @include mediaTablet {
+					 font-size: 60px;
+  			}
+    @include mediaPhone {
+					 font-size: 40px;
+  			}
+}
+h2{
+   font-family: "Prata";
+    line-height: 110%;
+}
+p {
+  font-size: 23px;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1600px;
+  
+  &--sm {
+    max-width: 630px;
+  }
+}
+.text-right{
+  text-align: right;
+}
+
+
+.no-scroll{
+  overflow-y: hidden;
+}
+
+//--------------------------------
+span {
+  font-size: 40px;
+  font-family: "Prata";
+   @include mediaTablet {
+					 font-size: 30px;
+  			}
+        @include mediaPhone {
+					 font-size: 16px;
+  			}
+}
+input{
+   border: 1px solid #D6D6D6;
+}
+input::placeholder{
+  font-size: 24px;
+  line-height: 150%;
+  color: $placeholder;
+   @include mediaTablet {
+      font-size: 16px;
+    }
+
+}
+button:hover{
+  transition: opacity 0.3s ease-in;
+  opacity: 0.7;
+}

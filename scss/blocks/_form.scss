@@ -1,0 +1,105 @@
+.form {
+      width: 100%;
+      padding-top: 100px;
+      overflow: hidden;
+      position: relative;
+      @include mediaTablet {
+            padding-top: 50px;
+      }
+		// .form__info
+    &__info-row{
+        background: right url('./../../img/form/8-8 3.png') no-repeat;
+        background-color: $white;
+        height: 100%;
+        border-radius: 20px;
+
+        @include mediaPhone {
+		background: $white;
+               
+  	}
+     
+    }
+		&__info {
+            display: flex;
+            flex-direction: column;
+            width: 50%;      
+            padding-left: 135px;
+            padding-top: 72px;
+            @include mediaPhone {
+		      padding-left: 35px;
+
+  			}
+		}
+
+		// .form__info-title
+
+		&__info-title {
+            font-size: 54px;
+            color: $accent;
+            padding-bottom: 45px;
+             @include mediaTablet {
+                  font-size: 34px;
+            }
+		}
+
+		// .form__name
+
+		&__name {
+           padding: 14px 0px 14px 40px;
+           width: 100%;
+           @include mediaTablet {
+                  font-size: 16px;
+            }
+		}
+
+		// .form__mail
+
+		&__mail {
+            padding: 14px 0px 14px 40px;
+            width: 100%;
+            margin: 13px 0px 0px 0px;
+		}
+
+		// .form__check
+
+		&__check {
+            margin: 32px 0px;
+            font-size: 19px;
+            color: #55565a;
+             @include mediaTablet {
+                  font-size: 14px;
+                  margin: 22px 0px;
+             }
+		}
+
+		// .form__btn
+
+		&__btn {
+            
+			height: 78px;
+			background: $dark;
+			color: $white;
+			font-size: 24px;
+			text-transform: uppercase;
+			border-radius: 10px;
+                  margin-bottom: 50px;
+			
+			transition: opacity 0.3s ease-in;
+                   @include mediaTablet {
+                        height: 48px;
+                        font-size: 16px;
+                   }
+		}
+
+		// .form__img
+
+		&__img {
+            position: absolute;
+            height: 100%;
+            top: 20px;
+            // top: -40px;
+            left: 60%;
+           
+            
+		}
+}
