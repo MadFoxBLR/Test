@@ -5,6 +5,9 @@
 		@include mediaTablet{
 			 margin-top: 60px;
 		}
+		@include mediaPhoneMin{
+			 margin-top: 20px;
+		}
     
 		// .footer__nav
 
@@ -35,11 +38,27 @@
 		// .footer__ico
 
 		&__ico {
+			@include mediaPhoneMin{
+				width: 20%;
+			}
 		}
-
+		&__social{
+			@include mediaPhoneMin{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			row-gap: 10px;
+			column-gap: 40px;
+			
+			// gap-column: 20px;
+			}
+			
+		}
 		// .footer__social
 		&__social a{
 			padding: 0px 16px;
+			@include mediaPhoneMin{
+				padding: 0px 4px;
+			}
 		}
 
 		&__social img:hover{
@@ -59,6 +78,10 @@
 			@include mediaTablet{
 				width: 130px;
 				height: 60px;
+		}
+		@include mediaPhoneMin{
+			width: 80px;
+			height: 35px;
 		}
 		}
 

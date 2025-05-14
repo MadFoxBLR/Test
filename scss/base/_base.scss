@@ -74,6 +74,12 @@ span {
 }
 input{
    border: 1px solid #D6D6D6;
+   color: $dark;
+   font-size: 20px;
+  
+   @include mediaTablet {
+                  font-size: 16px;
+            }
 }
 input::placeholder{
   font-size: 24px;

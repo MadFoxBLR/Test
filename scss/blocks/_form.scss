@@ -6,6 +6,9 @@
       @include mediaTablet {
             padding-top: 50px;
       }
+       @include mediaPhoneMin {
+            padding-top: 20px;
+      }
 		// .form__info
     &__info-row{
         background: right url('./../../img/form/8-8 3.png') no-repeat;
@@ -29,6 +32,10 @@
 		      padding-left: 35px;
 
   			}
+            @include mediaPhoneMin {
+			width: 100%;
+                  padding: 35px;
+		}
 		}
 
 		// .form__info-title
@@ -40,6 +47,9 @@
              @include mediaTablet {
                   font-size: 34px;
             }
+            @include mediaPhoneMin {
+                   padding-bottom: 20px;
+            }
 		}
 
 		// .form__name
@@ -47,14 +57,13 @@
 		&__name {
            padding: 14px 0px 14px 40px;
            width: 100%;
-           @include mediaTablet {
-                  font-size: 16px;
-            }
+           
 		}
 
 		// .form__mail
 
 		&__mail {
+            
             padding: 14px 0px 14px 40px;
             width: 100%;
             margin: 13px 0px 0px 0px;
@@ -89,6 +98,9 @@
                         height: 48px;
                         font-size: 16px;
                    }
+                  @include mediaPhoneMin {
+                        margin-bottom: 0px;
+                  }
 		}
 
 		// .form__img
@@ -99,7 +111,9 @@
             top: 20px;
             // top: -40px;
             left: 60%;
-           
+           @include mediaPhoneMin {
+			display: none;
+		}
             
 		}
 }
