@@ -455,7 +455,9 @@ button:hover {
   font-size: 40px;
   position: absolute;
   top: 20%;
-  left: 50%;
+  left: 40%;
+}
+
 }
 
 .info {
@@ -542,7 +544,7 @@ button:hover {
 .info__text-list li::before {
   position: absolute;
   left: -80px;
-  content: url(/img/info/MarkerInfo.svg);
+  content: url(../img/info/MarkerInfo.svg);
 }
 @media screen and (max-width: 1200px) {
   .info__text-list li::before {
