@@ -316,7 +316,8 @@ button:hover {
 }
 
 .header__title-list li::marker {
-  content: url(./../../img/tick.svg);
+  content: url(./../img/tick.svg)
+  //content: url(./../../img/tick.svg);
 }
 
 .header__subtitle {
